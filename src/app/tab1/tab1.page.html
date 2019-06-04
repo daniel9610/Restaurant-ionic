@@ -1,0 +1,74 @@
+
+
+<ion-content>
+    <ion-card class="welcome-card">
+
+      <!-- slider -->
+     <ion-slides>
+  <ion-slide>
+    <h1 ><img src="assets/slider/1.jpg" alt="" /></h1>
+    
+  </ion-slide>
+  <ion-slide>
+    <h1><img src="assets/slider/2.jpg" alt="" /></h1>
+  </ion-slide>
+  <ion-slide>
+    <h1><img src="assets/slider/3.jpg" alt="" /></h1>
+  </ion-slide>
+</ion-slides>
+
+      <!-- ----------- -->
+     
+      <ion-card-header padding class="masters">
+        <ion-card-title color="light" >Servicios</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-header padding class="textInformation"> 
+          <ion-card-title>Nuestros servicios</ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-header padding class="textInformation">
+            <ion-card-content>
+              Nuestros servicios son caracterizados por
+              <br>la mejor atencion al cliente
+                </ion-card-content>
+             </ion-card-header>
+            <ion-card-content >
+         </ion-card-content>
+
+      <ion-card-header padding class="products">
+      <ion-card-content *ngFor="let producto of productos">
+      <ion-slides>
+          <ion-slide>
+              <!-- <ion-label>{{ producto.name }}<br></ion-label> -->
+            <h1><img src="{{producto.image_link}}" alt="" /></h1>
+            
+          </ion-slide>
+         
+        </ion-slides>
+      </ion-card-content>
+    </ion-card-header>
+
+      <ion-card-content padding class="textInformation">
+        <br>
+        <p>Restaurantes es la compañía líder de delivery online de víveres y comida en Colombia. Nuestro servicio consiste en brindar una plataforma online simple, práctica y sin costo adicional que permite a los usuarios ordenar delivery a restaurantes o supermercados. ¡Nos motiva hacerte la vida más fácil!</p>
+        <p><strong>- Tony Antonio -</strong></p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card-header padding class="products"> 
+      <ion-card-title color="light" >Contáctenos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-header padding class="products">
+        <ion-card-content>
+          calle 80 <br>
+          Bogotá <br>
+          Colombia <br><br>
+          (+57) 245-456 -123-4532<br>
+          restaurante@calle80.com 
+            </ion-card-content>
+         </ion-card-header>
+        <ion-card-content >
+     </ion-card-content>
+

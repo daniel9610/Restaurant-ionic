@@ -1,0 +1,63 @@
+
+
+<ion-content>
+    <ion-card class="welcome-card">
+
+      <!-- slider -->
+   
+
+      <!-- ----------- -->
+     
+      <ion-card-header padding class="masters">
+        <ion-card-title color="light" >Menú</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-header padding class="textInformation"> 
+          <ion-card-title>Platos principales</ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-header padding class="textInformation">
+            <ion-card-content>
+              Los mejores platos especiales los encuentras
+              <br>aquí ¡has tu pedido ahora!
+                </ion-card-content>
+             </ion-card-header>
+            <ion-card-content >
+         </ion-card-content>
+
+      <ion-card-header padding class="products">
+      <ion-card-content *ngFor="let producto of productos">
+      
+          <ion-card-content>
+              <ion-card-header><strong>{{ producto.name }}</strong></ion-card-header>
+            <h1><img src="{{producto.image_link}}" alt="" /></h1>
+            <p>{{producto.description}}</p>
+          </ion-card-content>
+         
+       
+      </ion-card-content>
+    </ion-card-header>
+
+      <ion-card-content padding class="textInformation">
+        <br>
+        <p>Restaurantes es la compañía líder de delivery online de víveres y comida en Colombia. Nuestro servicio consiste en brindar una plataforma online simple, práctica y sin costo adicional que permite a los usuarios ordenar delivery a restaurantes o supermercados. ¡Nos motiva hacerte la vida más fácil!</p>
+        <p><strong>- Tony Antonio -</strong></p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card-header padding class="products"> 
+      <ion-card-title color="light" >Contáctenos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-header padding class="products">
+        <ion-card-content>
+          calle 80 <br>
+          Bogotá <br>
+          Colombia <br><br>
+          (+57) 245-456 -123-4532<br>
+          restaurante@calle80.com 
+            </ion-card-content>
+         </ion-card-header>
+        <ion-card-content >
+     </ion-card-content>
+
